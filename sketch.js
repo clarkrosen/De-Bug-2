@@ -1,6 +1,8 @@
 var r;
 var g;
 var b;
+var mouseStrength;
+var strokeStrength;
 
 function setup() {
   createCanvas(500,500);
@@ -18,7 +20,7 @@ function draw() {
 function mouseDragged() {
   var mouseStrength = dist(mouseX, mouseY, pmouseX, pmouseY);
   var strokeStrength = map(mouseStrength, 0, 100, 0, 20);
-  strokeStrength=(r%255,g%255,b%255);
+  stroke(r%255,g%255,b%255);
   strokeWeight(strokeStrength);
   line(mouseX, mouseY, pmouseX, pmouseY);
 }
