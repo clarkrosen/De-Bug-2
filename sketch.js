@@ -1,8 +1,6 @@
 var r;
 var g;
 var b;
-var mouseStrength;
-var strokeStrength;
 
 function setup() {
   createCanvas(500,500);
